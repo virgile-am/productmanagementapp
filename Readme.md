@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-The Product Management System is an e-commerce platform developed using Spring Boot that provides advanced product management features. It includes functionalities for request handling, data binding, and integration with both relational and NoSQL databases. Additionally, it uses a binary tree structure for efficient product categorization and retrieval.
+The Product Management System is a comprehensive e-commerce platform developed using Spring Boot, offering advanced product management features. It handles requests efficiently, supports data binding, and integrates seamlessly with both relational and NoSQL databases. The system also employs a binary tree structure for optimal product categorization and retrieval.
 
 ## Table of Contents
 
@@ -31,41 +31,42 @@ The Product Management System is an e-commerce platform developed using Spring B
 - Spring Data MongoDB
 - Spring Boot Actuator
 - Maven
-- H2 Database (for development)
+- Hibernate for ORM
 - MongoDB (for NoSQL storage)
 
 ## Setup Instructions
 
 1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/product-management-system.git
-   cd product-management-system
+   ```bash 
+https://github.com/virgile-am/productmanagementapp.git
 ### Build the Project:
-./mvn clean install
+mvn clean install
 ### Run the Application:
-./mvn spring-boot:run
+mvn spring-boot:run
 
 ## Access the Application:
 
-The application will be available at http://localhost:8080
+The application will be available at http://localhost:4000
 
 # API Endpoints
 
 ## Products
 
-- **GET /products**: Retrieve all products
-- **GET /products/{id}**: Retrieve a product by ID
-- **POST /products**: Create a new product
-- **PUT /products/{id}**: Update a product by ID
-- **DELETE /products/{id}**: Delete a product by ID
+- **GET api/v1/products**: Retrieve all products
+- **GET api/v1/products/{id}**: Retrieve a product by ID
+- **POST api/v1/products**: Create a new product
+- **PUT api/v1/products/{id}**: Update a product by ID
+- **DELETE api/v1/products/{id}**: Delete a product by ID
 
 ## Categories
 
-- **GET /categories**: Retrieve all categories
-- **GET /categories/{id}**: Retrieve a category by ID
-- **POST /categories**: Create a new category
-- **PUT /categories/{id}**: Update a category by ID
-- **DELETE /categories/{id}**: Delete a category by ID
+- **GET api/v1/categories**: Retrieve all categories
+- **GET api/v1/categories/{id}**: Retrieve a category by ID
+- **POST api/v1/categories**: Create a new category
+- **PUT api/v1/categories/{id}**: Update a category by ID
+- **DELETE /api/v1/categories/{id}**: Delete a category by ID
+- ### Postman endpoint  Repo link
+https://www.postman.com/virgile250/workspace/websort/collection/36765726-0a81cf1f-bbb0-44a0-8db6-a09d4435f5d4?action=share&creator=36765726
 ## Entities 
 ### Product
 - ID
